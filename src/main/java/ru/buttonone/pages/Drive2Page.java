@@ -21,9 +21,9 @@ public class Drive2Page extends BasePage {
     public Drive2Page(WebDriver driver) {
         super(driver);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        By xpathSearchFirstElement = By.xpath("//button[@class='x-box-more']");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(xpathSearchFirstElement));
-        By xpathSearchSecondElement = By.xpath("//h1[@class='x-header']");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(xpathSearchSecondElement));
+        By xpathAllBrandsOfCars = By.xpath("//button[@class='x-box-more']");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(xpathAllBrandsOfCars));
+        By xpathSearchByBrand = By.xpath("//h1[@class='x-header']");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(xpathSearchByBrand));
     }
 }

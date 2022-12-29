@@ -18,7 +18,7 @@ public class AsusPage extends BasePage {
     public AsusPage(WebDriver driver) {
         super(driver);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        By xpathSearchElement = By.xpath("//*[@id='skipContentFocus']/div[5]/h2");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(xpathSearchElement));
+        By xpathEventsAndPromotions = By.xpath("//*[@id='skipContentFocus']/div[5]/h2");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(xpathEventsAndPromotions));
     }
 }
